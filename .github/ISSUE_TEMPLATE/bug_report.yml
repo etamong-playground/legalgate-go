@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a problem with legalgate-go
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the effective date, the `now` value, and the returned result.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Module version / tag or commit.
+    validations:
+      required: false
